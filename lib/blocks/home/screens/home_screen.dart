@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
       body: Center(
         child: PrimaryButton(
           child: const Text('To B', style: TextStyle(color: Colors.white)),
-          onPressed: () => Get.to(const BScreen(), id: 2),
+          onPressed: () => Get.to(const BScreen(), id: 0),
         ),
       ),
     );

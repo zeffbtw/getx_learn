@@ -13,7 +13,10 @@ class CScreen extends StatelessWidget {
       body: Center(
         child: PrimaryButton(
           child: const Text('To Settings', style: TextStyle(color: Colors.white)),
-          onPressed: () => Get.find<BottomTabController>().changeTabIndex(1),
+          onPressed: () {
+            Get.back();
+            Get.find<BottomTabController>().changeTabIndex(1);
+          },
         ),
       ),
     );

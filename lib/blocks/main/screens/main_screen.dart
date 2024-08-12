@@ -17,14 +17,21 @@ class MainScreen extends StatelessWidget {
               index: controller.tabIndex,
               children: [
                 Navigator(
-                  key: Get.nestedKey(2),
+                  key: Get.nestedKey(0),
                   onGenerateRoute: (routeSettings) {
                     return MaterialPageRoute(
                       builder: (context) => const HomeScreen(),
                     );
                   },
                 ),
-                const SettingsScreen(),
+                Navigator(
+                  key: Get.nestedKey(1),
+                  onGenerateRoute: (routeSettings) {
+                    return MaterialPageRoute(
+                      builder: (context) => const SettingsScreen(),
+                    );
+                  },
+                ),
               ],
             ),
           ),

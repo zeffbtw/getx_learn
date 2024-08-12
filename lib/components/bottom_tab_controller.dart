@@ -11,7 +11,7 @@ class BottomTabController extends GetxController {
 
   void changeTabIndex(int index) {
     if (tabIndex == index) {
-      Get.until((route) => route.isFirst);
+      Get.until((route) => route.isFirst, id: index);
     } else {
       tabIndex = index;
       update();
