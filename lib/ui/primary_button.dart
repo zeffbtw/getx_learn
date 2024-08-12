@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class NeumorphicButton extends StatelessWidget {
+class PrimaryButton extends StatelessWidget {
   final Widget child;
   final VoidCallback onPressed;
 
-  const NeumorphicButton({super.key, required this.child, required this.onPressed});
+  const PrimaryButton({super.key, required this.child, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
